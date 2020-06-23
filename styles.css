@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700i|Oswald|Space+Mono&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(image/abc.jpg);
+ }
+main{
+    padding: 20px;
+    overflow: auto;
+}
+main p{
+    text-align: justify;
+}
+
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+ header {
+     display: inline;
+ }
+ nav{
+     background-color: black;
+     padding: 5px;
+     position: sticky;
+     top: 0;
+ }
+ nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+ nav a:hover,a:active {
+    font-weight: bold;
+    background: rgb(86, 86, 88);
+    transition: .5s;
+    padding: 5px;
+    border-radius: 20%;
+}
+ .profile header {
+     text-align: center;
+ }
+ footer{
+     padding: 20px;
+     color: rgb(12, 11, 11);
+     background-color: rgb(78, 68, 68);
+     text-align: center;
+     font-weight: bold;
+ }
+ .featured-image{
+     width: 100%;
+     height: 500px;
+     
+     
+ }
+ .profile img {
+     width: 150px;
+     height: 150px;
+     background-image: url(image/me.jpg);
+     border-radius: 50%;
+     background-size: cover;
+     display: block;
+     margin: auto;
+ }
+ .identitas{
+     text-align: center;
+     color:  black;
+ }
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+     border-radius: 5px;
+     padding: 20px;
+     margin-top: 20px;
+ }
+ .jumbotron {
+     font-size: 20px;
+     padding: 60px;
+     background-image: url(image//dsds.jpg);
+     text-align: center;
+     color: white;
+ }
+ .jumbotron h3{
+     color: white;
+ }
+ nav li {
+     display: inline;
+     list-style-type: none;
+     margin-right: 20px;
+ }
+
+nav .kanan a{
+    float: right;
+    padding-right: 100px;
+}
+ #content{
+     float: left;
+     width: 75%;
+ }
+ figcaption{
+     text-align: center;
+ }
+ aside{
+     float: right;
+     width: 25%;
+     padding-left: 20px;
+ }
+ .sidebar-dua {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+.box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+header h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.sidebar-dua .box li a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+.sidebar-dua .box li a:hover{
+    font-weight: bold;
+    background: rgb(114, 114, 116);
+    transition: .5s;
+    border-radius: 20%;
+    padding: 5px;
+
+}
+ #activity li{
+     font-family: Arial, Helvetica, sans-serif;
+     color: black;
+ }
+ .identitas table{
+     font-size: 15px;
+ }
+ @media screen and(max-width: 1000px){
+     #content,
+     aside{
+         width: 100%;
+         padding: 0;
+     }
+ }

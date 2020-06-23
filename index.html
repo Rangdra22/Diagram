@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Informasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+<body>
+ <header>
+     <div class="jumbotron">
+        <h1>Sistem Informasi</h1>
+        <h3>Macam macam Diagram dalam Sistem Informasi.</h3>
+    </div>
+<nav>
+    <ul>
+        <li><a href="#data-flow">Data Flow</a></li>
+        <li><a href="#flowchart">Flowchart</a></li>
+        <li><a href="#usecase">Use Case</a></li>
+        <li><a href="#activity">Activity</a></li>
+        <li class="kanan"><a href="#sosmed">Social Media</a></li>
+    </ul>
+    
+</nav>
+</header>
+<main>
+    <div id="content">
+        <article id="data-flow" class="card">
+            <h2 id="data-flow">Data Flow Diagram</h2>
+            <img src="image/dfd.png" class="featured-image" alt="dfd">
+            <p>Dalam pengembangan sistem informasi dibutuhkan tahapan desain sistem, yang berfungsi sebagai perancangan untuk elemen-elemen komputer yang akan digunakan pada sistem baru. Alat bantu dalam perancangan desain sistem ada banyak macam nya, yang salah satu diantaranya adalah Data Flow Diagram atau disebut DFD.</p>
+            
+            <p>Pengertian DFD adalah suatu model logika data atau proses yang dibuat untuk menggambarkan menggunakan simbol-simbol untuk merepresentasikan aliran data antara proses, penyimpanan data dan aliran ke dalam dan keluar sistem.</p>
+            <p>Penggunaan DFD dipolulerkan oleh DeMarco (1978) dan Gane & Sarson (1979) melalui  metodologi analisis sistem terstruktur (structured systems analysis methodologiies). Sehingga ada dua teknik dasar dalam pemakaian simbol-simbol DFD. Akan tetapi yang akan diterangkan pada postingan ini adalah simbol-simbol DFD yang serign digunakan :
+            </p>
+            <h3>Berikut adalah simbol-simbol yang sering digunakan</h3>
+            <p>Simbol-simbol ini akan diterangkan sekaligus dengan contoh sistem informasi penggajian, agar dapat langsung dipahami. 
+            </p>
+                <section>
+                    <h3>1.Entitas Eksternal</h3>
+                        <p>Merupakan komponen DFD yang berada diluar sistem dan perannya adalah memberi input data ke sistem atau menerima output data/informasi dari sistem. Terkadang entitas eksternal ini diberi huruf sebagai indentitas semisal P untuk pegawai atau D untuk direktur.
+                        .</p>
+                        <img src="image/exdfd.png" class="featured-image" alt="eks dfd">
+                        <p>Dalam gambar diatas adalah simbol entitas eksternal dengan diberi nama Pegawai atau bisa juga ditulis dengan huruf P dalam sistem informasi penggajian. Pegawai akan dapat memberi input pada sistem semisal data_karyawan atau mendapat output dari sistem seperti slip_gaji.
+                        </p>
+                    </section>
+                <section>
+                        <h3>2.Proses</h3>
+                        <p>Proses memperlihatkan mengenai apa yang dilakukan oleh sistem, kaitannya dengan akifitas pengolahan data (perekaman, pengolahan, pembentukan informasi dsb). Setiap proses mempunyai satu atau lebih data input dan menghasilkan satu atau lebih data output.</p>
+                        <img src="image/prosesdfd.png" class="featured-image" alt="Proses">
+                        <p>Gambar diatas adalah simbol dari proses (sis. inf penggajian) yang dari proses ini akan dapat menerima inputan dari pegawai seperti data_karyawan kemudian sistem memproses inputan tersebut sehingga menghasilkan output kepada pegawai seperti slip_gaji.
+                        </p>
+                <section>
+                        <h3>3.Data Flow</h3>
+                        <p>Data flow (aliran data) adalah data yang mengalir di dalam sistem, tepatnya adalah : diantara dua proses, dari data store ke proses dan sebaliknya, dari entitas eksternal ke sistem dan sebaliknya. Penamaan pada sebuah data flow diusahakan sesuai mewakili objek data sebenarnya.
+                        </p>
+                        <img src="image/flowdfd.png" class="featured-image" alt="data flow">
+                        <p>Pada contoh data flow data_karyawan dan slip_gaji merupakan aliran data dari entitas eksternal menuju pada sistem dan sebaliknya.</p>
+                </section>
+                <section>
+                        <h3>4.Data Store</h3>
+                        <p>Merupakan komponen yang berfungsi untuk menyimpan data atau file. Pandanga data store dilepaskan dari konsep file database atau arsip dokumen manual.</p>
+                        <img src="image/data store.png" class="featured-image" alt="data store">
+                </section>
+        </article>
+
+        <article id="flowchart" class="card">
+            <h2 id="flowchart">Flowchart</h2>
+            <p>Flowchart adalah sebuah jenis diagram yang mewakili aliran kerja suatu sistem, atau dapat mewakili algoritme yang menampilkan tahapan-tahapan langkah dalam bentuk simbol-simbol yang telah ditentukan. Sesuai dengan artinya jika dibahasakan Bahasa Indonesia, yaitu diagram alir jadi Flowchart ini diagram yang mengalirkan atau mewakili ilustrasi penggambaran penyelesaian sebuah masalah.</p>
+            <p>Dalam perancangan Flowchart sebenarnya tidak memiliki rumus tertentu, hanya saja Flowchart memiliki simbol-simbol yang biasa digunakan (Gambar Simbol Flowchart). Flowchart bisa dikatakan sebagai gambaran dari hasil pemikiran dalam menganalisa suatu permasalahan dalam computer.
+            </p>
+            <img src="image/flowchart.png" class="featured-image" alt="Flowchart">
+            <p>Seperti yang dijelaskan diatas, maka fungsi utama Flowchart adalah sebagai penggambaran, penyederhanaan rangkaian proses atau prosedur sehingga mudah dipahami dan mudah dilihat berdasarkan dari urutan langkah suatu proses. Perbedaan yang mendasar antara Flowchart dengan DFD (Data Flow Diagram) adalah pada langkah urutan. Dimana diketahui bahwa DFD tidak terpaku pada prosedur langkah atau urutan.</p>
+        </article>
+
+        <article id="usecase" class="card">
+            <h2 id="usecase">Use Case Diagram
+            <img src="image/usecase.png" class="featured-image" alt="use case">
+            </h2>
+            <p>Use Case Diagram adalah sebuah penggambaran dari interaksi pengguna dengan sistem yang menunjukan hubungan antara pengguna dengan sistem. Use Case direpresentasikan dengan urutan langkah yang sederhana, sehingga mudah untuk dibaca.
+            </p>
+            <p>Ada beberapa fungsi utama dari Use Case, diantaranya : <br>
+            1.Dapat memperlihatkan urutan aktivitas proses yang ada pada sistem.<br>
+            2.Menggambarkan proses bisnis dan juga aktivitas yang ada didalam sistem.</p>
+            <section>
+            <h3>Contoh sederhana dari penerapan Use Case Diagram pada "sistem informasi ojek online"</h3>
+                <figure>
+                    <img src="image/contoh usecase ojek online.png" class="featured-image" alt="usecase ojek online">
+                    <figcaption>Contoh Use Case Sistem Informasi Ojek Onlie</figcaption>
+                </figure>
+            </section>
+            <section>
+                <figure>
+                    <img src="image/extend.png" class="featured-image" alt="Extend">
+                    <figcaption>Extend</figcaption>
+                </figure>
+                <p><strong>Extend</strong>, relasi Use Case tambahan ke sebuah Use Case dimana Use Case yang ditambahkan dapat berdiri sendiri meski tanpa Use Case tambahan itu. Arah panah mengarah pada Use Case yang ditambahkan.
+                </p>
+            </section>
+            <section>
+                    <figure>
+                    <img src="image/include.png" class="featured-image" alt="include">
+                    <figcaption>Include</figcaption>
+                </figure>
+                <p><strong>Include</strong>, relasi Use Case tambahan ke sebuah Use Case dimana Use Case yang ditambahkan membutuhkan Use Case ini untuk menjalankan fungsinya. Arah panah Include mengarah pada Use Case yang dipakai atau mengarah pada Use Case tambahan.
+                </p>
+            </section>
+            <section>
+                <figure>
+                <img src="image/generation.png" class="featured-image" alt="generation">
+                <figcaption>generalisasi</figcaption>
+            </figure>
+            <p><p><strong>Generalisasi</strong>, Hubungan Generalisasi dan Spesialisasi antara dua buah Use Case dimana fungsi yang satu merupakan fungsi yang lebih umum dari lainnya. Arah panah mengarah pada Use Case yang menjadi Generalisasi.</p></p>
+        </section>
+        </article>
+        <article id="activity" class="card">
+            <h2 id="activity">Activity Diagram</h2>
+            <h3>Fungsi Activity Diagram</h3>
+            <ul>
+                <li>Memperlihatkan urutan aktifitas proses pada sistem.</li>
+                <li>Membantu memahami proses secara keseluruhan.</li>
+                <li>Activity diagram dibuat berdasarkan sebuah atau beberapa usecase.</li>
+                <li>Menggambarkan proses bisnis dan urutan aktivitas dalam sebuah proses.</li>
+            </ul>
+            <h3>komponen Activity Diagram</h3>
+            <ul>
+                <li><strong>Initial State</strong> adalah awal dimulanya suatu aliran kerja pada activity diagram pada sebuah activity diagram hanya terdapat satu initial state.</li>
+                <li><strong>Activity</strong> adalah pekerjaan yang dilakukan dalam aliran kerja.</li>
+                <li><strong>Transition</strong> untuk menghubungkan aktivitas selanjutnya setelah dari aktivitas sebelumnya.</li>
+                <li><strong>Decision</strong> berfungsi untuk menggambarkan pilihan kondisi dimana ada kemungkinan perbedaan transisi, untuk memastikan bahwa aliran kerja dapat mengalir ke lebih dari satu jalur.</li>
+                <li><strong>Final state</strong>adalah bagian akhir dari suatu aliran kerja pada sebuah activity diagram dan pada sebuah activity diagram bisa terdapat lebih dari satu final state.</li>
+            </ul>
+        </article>
+    </div>
+    <aside>
+        <article class="profile card">
+            <header>
+                <h2>Identitas Diri</h2>
+                 <img src="image/me.jpg" alt="">   
+            </header>
+            <section class="identitas">
+                
+                <table>
+                   <tr>
+                      <th>Nama:</th>
+                      <td>Rangdra Pangestu</td>
+                   </tr>
+                   <tr>
+                      <th>Tempat/Tanggal Lahir:</th>
+                      <td>Bekasi,22 Oktober 2000</td>
+                   </tr>
+                   <tr>
+                      <th>Hobi:</th>
+                      <td>Olahraga & Nonton Film</td>
+                   </tr>
+                   <tr>
+                      <th>Alamat:</th>
+                      <td>BEKASI</td>
+                   </tr>
+                      <tr>
+                      <th>Pekerjaan:</th>
+                      <td>MAHASISWA</td>
+                   </tr>
+               </table>
+             </section>
+        </article>
+    </aside>
+    <div id="sosmed" class="sidebar-dua">
+        <article class="box">
+            <header>
+                <h2>social media</h2>
+            </header>
+            <ul>
+                <li><a href="http://instagram.com/rangdrra">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </article>
+    </div>
+</main>
+<footer>
+<p>Copyright&#169; 2020, Rangdra Pangestu.</p>
+</footer>
+</body>
+</html>
